@@ -1,6 +1,7 @@
 body{
     width: 100%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
     color: #676d79;
      
 }
@@ -8,8 +9,59 @@ body{
 a{
     text-decoration: none;
     list-style-type: none;
+    color: #676d79;
 }
+
 li{
     text-decoration: none;
     list-style-type: none; 
+}
+
+/* Header con iconos */
+
+.contenidoHeader1{
+    display: flex;
+    justify-content:space-between;
+    border: 5px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 100px 20px 30px 20px;
+    border-color: rgb(224, 87, 87);
+    
+}
+
+strong{
+    color: black;
+}
+.contenidoHeader1 ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.contenidoHeader1 a{
+    margin: 10px;
+}
+
+.barraIconos{
+    display: flex;
+    justify-content: right;
+    margin-right: 30px;
+    
+    
+}
+.editorial{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.editorial a{
+    padding: 10px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+    
 }
