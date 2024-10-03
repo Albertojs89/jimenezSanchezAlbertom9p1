@@ -3,6 +3,7 @@ body{
     font-family: "Source Code Pro", monospace;
     font-weight: 400;
     color: #676d79;
+    
      
 }
 
@@ -26,8 +27,8 @@ li{
     border-top: none;
     border-left: none;
     border-right: none;
-    margin: 100px 20px 30px 20px;
-    border-color: rgb(224, 87, 87);
+    margin: 100px 70px 30px 70px;
+    border-color: #e8746c;
     
 }
 
@@ -49,8 +50,9 @@ strong{
     display: flex;
     justify-content: right;
     margin-right: 30px;
-    
-    
+    font-size: 23px;
+    color: #676d79;
+    opacity: 80%;
 }
 .editorial{
     display: flex;
@@ -64,4 +66,67 @@ strong{
     font-size: 20px;
     margin-top: 10px;
     
+}
+
+.container{
+    display:flex;
+    width: 90%;
+    justify-content:center;
+    margin: auto;
+    padding: 20px;
+    
+    
+}
+
+.container header {
+    display: block;
+    justify-content: flex-start;
+    margin-right: 80px;
+    margin-top: 5px;
+    align-items: center;
+    
+}
+
+.container header p{
+    display: block;
+    font-size: 13pt;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: #7f888f;;
+}
+
+
+.container header h1{
+    font-size: 70px;
+    color: #3d4449;
+    font-family: "Roboto Slab", serif;
+}
+
+hr{
+    width: 97%;
+    height: 1px;
+    background-color: #b3b8c2;
+    opacity: 50%;
+}
+
+.container span img{
+    margin-top: 50px;
+    border-radius: 8px;
+    width: 850px;
+    
+}
+
+#subtitulo{
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+}
+
+.btnLearn {
+    padding-left: 0%;
+    margin-top: 50px;
+}
+
+.btnLearn a{
+    border: 2px solid #e8746c;
+    padding: 10px;
 }
