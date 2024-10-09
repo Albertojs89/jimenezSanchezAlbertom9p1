@@ -102,12 +102,6 @@ strong{
     font-family: "Roboto Slab", serif;
 }
 
-hr{
-    width: 97%;
-    height: 1px;
-    background-color: #b3b8c2;
-    opacity: 50%;
-}
 
 .container span img{
     margin-top: 50px;
@@ -125,17 +119,31 @@ hr{
     padding-left: 0%;
     margin-top: 50px;
 }
+.btnLearn a:hover{
+    background-color:rgb(238, 235, 235);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
 
 .btnLearn a{
-    border: 2px solid #e8746c;
-    padding: 10px;
+    border: 2.5px solid #e8746c;
+    font-size: 13px;
+    padding: 13px 30px;
+    font-family: "Roboto Slab", serif;
+    color: #e8746c;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 
 
 /* parte II */
 .seccion2{
-    margin-top: 130px;
+    border: 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color:#c8d1d8;
+    margin: 100px 70px 120px 70px;
     
 }
 .contenidoHeader{
@@ -156,6 +164,7 @@ h2{
 }
 
 .contenido2{
+    display: flex;
     margin-top: 60px;
 }
 
@@ -173,7 +182,59 @@ p{
 }
 
 .main2{
-    margin: auto;
-    display: block;
+    
+    margin-left: 50px;
     flex-wrap: wrap;
+}
+
+#bordeDiamante{
+    font-size: 60px;
+    color: #e8746c;
+}
+#bordePaper{
+    font-size: 60px;
+    color: #e8746c;
+}
+
+
+.diamanteTelegram-paper{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:  70px 70px 5px;
+}
+
+.coheteGrafico{
+    margin:  70px 70px 70px;
+}
+
+
+
+.cuadro-rotado {
+    display: inline-block;      
+    padding: 20px;              
+    border: 3px solid rgba(210, 215, 217, 0.75);;     
+    transform: rotate(45deg);   
+    text-align: center;         
+    margin: 20px;
+}
+
+/* Para hacer que el texto dentro no se vea rotado */
+.cuadro-rotado span {
+    display: inline-block;
+    transform: rotate(-45deg);  /* Contrarresta la rotación del contenedor */
+}
+
+.contenido3{
+    display: flex;
+    margin-top: 10px;
+    padding-bottom: 70px;
+}
+
+hr{
+    margin:  70px 70px 0px 70px;
+    width: 97%;
+    height: 1px;
+    background-color: #b3b8c2;
+    opacity: 50%;
 }
