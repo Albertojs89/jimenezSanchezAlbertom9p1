@@ -167,6 +167,7 @@ h2{
 }
 /* MENU 2 DE LA PAGINA, CON MENU DE ICONOS-------------------------------------- */
 h3{
+    font-size: 22px;
     font-family: "Roboto Slab", serif;
     color: #3f474b;
 }
@@ -258,7 +259,7 @@ hr{
 
 .btnMore a{
     border: 2.5px solid #e8746c;
-    font-size: 13px;
+    font-size: 14px;
     padding: 13px 30px;
     font-family: "Roboto Slab", serif;
     color: #e8746c;
@@ -272,7 +273,14 @@ hr{
     display: flex;
     width: auto;
     height: auto;
-    
+    padding: 40px;
+}
+
+.post article{
+    padding: 10px;
+}
+.post article p{
+    width: 90%;
 }
 
 .post article .foto{
@@ -286,16 +294,20 @@ hr{
     margin-top: 40px;
     border-radius: 8px;
     border: 0;
-    width: 70%;
+    width: 90%;
     height: auto;
     transition: transform 0.3s ease-in-out;
     
 }
-
+.foto img{
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
 a.foto{
     overflow: hidden;
 }
  
-  .foto:hover {
+  .foto img:hover {
+    transition: transform 0.3s ease-in-out;
     transform: scale(1.1);
   }
