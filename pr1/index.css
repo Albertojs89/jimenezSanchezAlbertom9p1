@@ -1,9 +1,10 @@
 body{
+    display: flex;
     width: 100%;
     font-family: "Source Code Pro", monospace;
     font-weight: 400;
     color: #676d79;
-    background-color: #f5f6f7;
+    background-color: #ffffff;
      
 }
 
@@ -310,4 +311,18 @@ a.foto{
   .foto img:hover {
     transition: transform 0.3s ease-in-out;
     transform: scale(1.1);
+  }
+
+
+  /* SIDEBAR LATERAL */
+
+  #contenidoSide{
+    width: 24em;
+    background-color: #f5f6f7;
+  }
+
+  .sidebarContenido{
+    padding: 26.67px 26.67px 21.33px 26.67px; 
+    width: 384px;
+
   }
