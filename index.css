@@ -362,7 +362,11 @@ a.foto{
   .cuadroSearch input[type="text"]:focus {
     border-color: #e8746c;
 }
-
+.cuadroSearch input::placeholder {
+    font-size: 18px;
+    font-family: "Roboto Slab", serif; 
+    opacity: 60%;
+}
 .contenidoHeader2 h3{
     border: 3.9px solid;
     border-top: none;
