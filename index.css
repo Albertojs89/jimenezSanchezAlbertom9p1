@@ -308,21 +308,21 @@ hr{
     border: 0;
     width: 90%;
     height: auto;
-    transition: transform 0.3s ease-in-out;
+    
     
 }
 .foto img{
     transition: transform 0.3s ease-in-out;
-    overflow: hidden;
+    
 }
 a.foto{
     overflow: hidden;
 }
  
-  .foto img:hover {
+.foto img:hover {
     transition: transform 0.3s ease-in-out;
     transform: scale(1.1);
-  }
+}
 
 
   /* SIDEBAR LATERAL ------------------------------------*/
@@ -348,24 +348,21 @@ a.foto{
     background-color: #eff1f2;
   }
 
-  form .cuadroSearch{
-    padding-right: 20px;
-  }
-
+  
   input{
     height: 40px;
-    width: 320px;
-    border: solid 1px rgba(210, 215, 217, 0.75);
+    width: 350px;
+    border: solid 1px rgba(219, 227, 230, 0.75);
     border-radius: 5px;
     
   }
-  .cuadroSearch input[type="text"]:focus {
-    border-color: #e8746c;
-}
+
 .cuadroSearch input::placeholder {
     font-size: 18px;
+    font-weight: 350;
     font-family: "Roboto Slab", serif; 
     opacity: 60%;
+    
 }
 .contenidoHeader2 h3{
     border: 3.9px solid;
@@ -379,7 +376,33 @@ a.foto{
     
 }
 
-/* menu del sidebar */
+/* menu del sidebar ------------------------------------------------------*/
+
+.cuadroSearch {
+    position: relative;
+    width: 320px; /* Ajusta según tus necesidades */
+    
+}
+
+.cuadroSearch input {
+    width: 100%;
+    padding: 10px 10px 10px 20px; /* Añade padding a la izquierda para dejar espacio al ícono */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    height: 45px;
+}
+
+.cuadroSearch i {
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 50%;
+    position: absolute;
+    right: 15px; /* Posiciona el ícono a la izquierda */
+    top: 50%;
+    transform: translateY(-50%) scaleX(-1); /* Centra el ícono verticalmente y el scalex añade efecto espejo al icono*/
+    color: #999; /* Color del ícono */
+}
 
 .menuSide {
     color: #3d4449;
@@ -401,6 +424,9 @@ a.foto{
     border: none;                 /* Quita el borde solo de la última lista */
 }
 
+
+
+
 /* PARTE 2 MENU SIDEBAR CON IMAGENES */
 
 
@@ -417,3 +443,76 @@ header h3{
     padding: 10px 0;
     
 }
+
+
+
+
+.menuSide2 article{
+    margin-top: 10px;
+}
+.menuSide2 article p{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.menuSide2 article .foto2{
+    display: block;
+}
+.menuSide2 article .foto2 img{
+    width: 100%;
+}
+.foto2{
+    margin-top: 40px;
+    border-radius: 6px;
+    border: 0;
+    width: 100%;
+    height: auto;
+    
+    
+}
+.foto2 img{
+    transition: transform 0.1s ease-in-out;
+    
+}
+a.foto2{
+    overflow: hidden;
+}
+ 
+.foto2 img:hover {
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+/* boton more sidebar */
+
+.btnMore2 {
+    padding-left: 0%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.btnMore2 a:hover{
+    background-color:rgb(238, 235, 235);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btnMore2 a{
+    border: 2.5px solid #e8746c;
+    font-size: 13px;
+    padding: 11px 26px;
+    font-family: "Roboto Slab", serif;
+    color: #e8746c;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+/* seccion 2 sidebar */
+
+.side3titulo{
+    margin-top: 50px;
+    display: block;
+}
+
+
