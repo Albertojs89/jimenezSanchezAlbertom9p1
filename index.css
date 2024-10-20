@@ -1,7 +1,7 @@
 body{
     display: flex;
     width: 100%;
-    font-family: "Source Code Pro", monospace;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     color: #676d79;
     background-color: #ffffff;
@@ -327,7 +327,10 @@ a.foto{
 
   /* SIDEBAR LATERAL ------------------------------------*/
   
-  
+  .sidebarContenido p{
+    display: block;
+    
+  }
   
 
   #contenidoSide{
@@ -454,6 +457,7 @@ header h3{
     width: 100%;
     margin-top: 20px;
     font-size: 16px;
+    
 }
 
 .menuSide2 article .foto2{
@@ -514,5 +518,35 @@ a.foto2{
     margin-top: 50px;
     display: block;
 }
+.sidebarContenido p{
+    font-size: 16px;
+    line-height: 1.7;
+}
+.contacto{
+    padding: 0;  /* al poner padding 0 automaticamente se coloca en la izquierda de la caja*/
+    font-size: 14px;
+}
+
+.sidebarContenido .contacto li{
+    margin-top: 50px;
+
+}
 
 
+/* primer elemento de la ul con el subrayado puntuado */
+
+
+.sidebarContenido .contacto li:first-child{
+    margin-right: 150px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid rgb(207, 198, 198);
+    border-style: dotted;
+}
+
+
+
+ul .contacto li{
+    
+}
