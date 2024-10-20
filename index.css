@@ -600,3 +600,18 @@ a.foto2{
     font-size: 14px;
     color: #969fa7;
 }
+
+/* toggle sidebar */
+
+.toggle-sidebar{
+    position:absolute;
+    top: 33px;
+    left: 415px;
+    font-size: 35px;
+    
+    
+}
+
+.toggle-sidebar i{
+    color: #e8746c;
+}
