@@ -188,7 +188,7 @@ p{
     font-size: 13pt;
     font-weight: 400;
     font-family: "Open Sans", sans-serif;
-    color: #7f888f;;
+    color: #7f888f;
 }
 
 .main2{
@@ -430,7 +430,7 @@ a.foto{
 
 
 
-/* PARTE 2 MENU SIDEBAR CON IMAGENES */
+/* PARTE 2 MENU SIDEBAR CON IMAGENES --------------------------------------------------------------------- */
 
 
 
@@ -489,7 +489,7 @@ a.foto2{
 }
 
 
-/* boton more sidebar */
+/* boton more sidebar ------- */
 
 .btnMore2 {
     padding-left: 0%;
@@ -524,7 +524,7 @@ a.foto2{
 }
 .contacto{
     padding: 0;  /* al poner padding 0 automaticamente se coloca en la izquierda de la caja*/
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .sidebarContenido .contacto li{
@@ -537,7 +537,7 @@ a.foto2{
 
 
 .sidebarContenido .contacto li:first-child{
-    margin-right: 150px;
+    margin-right: 100px;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -547,6 +547,56 @@ a.foto2{
 
 
 
-ul .contacto li{
+.sidebarContenido .contacto li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
     
+}
+
+
+.sidebarContenido .contacto li i{
+    transform: scaleX(-1); /* efecto espejo para el telf de icono*/
+    margin-right: 15px;
+    color: #e8746c;
+    font-size: 23px;
+    
+    
+}
+
+.copy{
+    display: block;
+    border-top: 1px solid  rgb(207, 198, 198);
+    margin-top: 70px;
+    padding: 40px 0 0 0;
+    
+}
+
+/* Como la clase sideBarcontenido tiene un bordeBottom añadimos nueva clase para quitar en este menu el ultimo borde, ya que esta clase la comparten varios menus */
+
+.ultimoSinBorde{
+    border-bottom: none;
+    
+}
+
+
+
+
+/* ultimo texto de copyright final */
+
+.copyEnlace{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid rgb(207, 198, 198);
+    border-style: dotted;
+    color: #969fa7;
+}
+
+
+
+
+.copy p{
+    font-size: 14px;
+    color: #969fa7;
 }
