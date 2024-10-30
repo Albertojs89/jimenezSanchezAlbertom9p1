@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  
+            
+  <body>
+    <header class="bg-success text-white text-center py-4">
+      <h1>Fútbol Club</h1>
+      <p>Noticies, Resultats i Classificacions</p>
+    </header>
+    <!--
+    bg-succes: aplica un fondo verde
+    text-white y center color y centra el contenido
+    py-4: ajusta el padding superior y inferior de la cabecera
+    
+    -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <ul class="navbar-nav nav-link active">
+          <li class="nav-item">
+            <a class="nav-link active" href="">FC Bootstrap</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="">Inici</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Partits</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Classificacions</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="">Contacte</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 
+    bg-light: aplica un fondo claro al navbar
+    navbar navbar-expand-lg bg-light: Establece la barra de navegación con fondo claro (bg-light) y la hace expandible en pantallas grandes (navbar-expand-lg).
+    navbar-nav: Define la lista de navegación dentro de la barra, donde cada elemento de la lista tiene la clase nav-item y los enlaces tienen la clase nav-link.
+    nav-link: estiliza los enlaces de navegacion dentro de una barra creada con la clase navbar (estilo visual, interacciones, adaptibilidad). 
+    nav-item: se aplica a los elementos de una lista de navegacion <li> (estiliza cada elemento para mantener espaciado y alineado)
+    -->
+    <main class="container my-5">
+      <div class="row">
+        <!-- Primera columna con tarjeta -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://okdiario.com/img/2024/10/26/casado-marc-635x358.jpg"
+              class="card-img-top"
+              alt="Millor jugador"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Jugador Estrella</h5>
+              <p class="card-text">El nostre millor jugador de la temporada</p>
+            </div>
+          </div>
+        </div>
+        <!-- Segunda columna con tarjeta -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://th.bing.com/th/id/R.b7d2f3daf04e472fa75eba85b4b7d011?rik=%2fmjvGQusrt2z2w&riu=http%3a%2f%2fwww.limak.com.tr%2fimages%2fcontent%2fbarselona-stadi-kutu.jpg&ehk=wUG%2fIMUVwVLnBxv3u3ICHiP2CSs4jxw4b3HvdZCptGc%3d&risl=&pid=ImgRaw&r=0"
+              class="card-img-top"
+              alt="El camp"
+            />
+            <div class="card-body">
+              <h5 class="card-title">El camp</h5>
+              <p class="card-text">
+                El nostre estadi, preparat per a grans partits.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Tercera columna con tarjeta -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://th.bing.com/th/id/R.193e1d385590e9e3f9d1e1243a62b58f?rik=9rUuJx4thHbkqw&riu=http%3a%2f%2fworldsoccertalk.com%2fwp-content%2fuploads%2f2015%2f06%2fChampions-League-trophy.jpg&ehk=sRGeTPtFdeerdVoZtJuiqL9cczOkgm8pfg15%2bGEFdGw%3d&risl=&pid=ImgRaw&r=0"
+              class="card-img-top"
+              alt="Trofeu"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Trofeu de Campions</h5>
+              <p class="card-text">
+                EL nostre objectiu aquesta temporada: guanyar el títol.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 
+            EXPLICACION
+        container: crea un contenedor que ajusta el tamaño que irán las tarjetas// el my-5: aplica un m(margen)y(vertical)5(tamaño) tanto en top como bottom
+        row: Definde una fila en la que estarán las tres columnas.
+        col-md-4: crea una columna de 3/4 del tamaño del viewport
+        card: crea una tarjeta
+        card-img-top: establece la imagen de encabezado de la tarjeta
+        card-body: contiene el cuerpo de la tarjeta: Da un padding asegurando que el texto y los elementos no queden pegados a los bordes de la tarjeta.
+        card-title: establece el título de la tarjeta
+        card-text: establece el texto del cuerpo de la tarjeta
+
+       -->
+      <!-- Formulario -->
+      <div class="container my-5">
+        
+        <div>
+            <form class="border shadow p-3">
+                <h2 class="py-3">Inscriu-te a la nostra Newsletter</h2>
+        <div class="mb-3">
+          <label for="name" class="form-label"
+            >Nom</label
+          >
+          <input
+            type="name"
+            class="form-control"
+            placeholder="Escriu el teu nom"
+            />
+          
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correu electrónic</label>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="nom@exemple.com"
+  
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+        </div>
+      </div>
+
+      <!-- EXPLICACION 
+      form-control: Da estilo a los campos de entrada de texto y al área de texto, haciéndolos más anchos, redondeados y visualmente consistentes.
+      btn-primary: Aplica un estilo de botón azul con un fondo claro.
+      btn: Define un botón genérico, que puede ser utilizado para cualquier tipo de acción.
+      p-3: Añade un padding interno espaciado alrededor del formulario. 
+      
+      
+      -->
+      <!-- BOTON MODAL -->
+       
+          <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Veure proper partit
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Diumenge FC Barcelona-Espanyol
+                        16:15
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- EXPLICACION
+    modal fade: Define el modal y permite que tenga un efecto de desvanecimiento al abrirse.
+    modal-dialog: Contiene el contenido del modal y proporciona la estructura básica.
+    modal-content: Contiene el contenido del modal, incluido el título, cuerpo y pie.
+    modal-header: Contiene el titulo del modal y un botón de cierre.
+    modal-body: Contiene el cuerpo del modal.
+    modal-footer: Contiene los botones de acción del modal. 
+    
+    -->
+    <!-- Alerta -->
+        <div class="alert alert-warning mt-3" role="alert">
+            Última noticia: El nostre davanter més jove en fer gol al Bernabeu! Lamine Yamal!
+        </div>
+    </main>
+
+    <footer class="bg-light text-center">
+        <p>©FC Bootstrap-Tots els drets reservats</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
